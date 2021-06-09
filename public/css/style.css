@@ -1,3 +1,103 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/*Logo and titles font*/
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../../public/fonts/Shrikhand-Regular.ttf) format("truetype");
+}
+/*Text font*/
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../public/fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../public/fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../public/fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../public/fonts/Roboto-Thin.ttf") format("truetype");
+}
+header {
+  width: 100%;
+  height: 113px;
+  border: 1px solid blue;
+}
+header .logo {
+  font-family: "Shrikhand";
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  padding-top: 13px;
+}
+header .position {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  font-family: "Roboto-Regular";
+  color: #353535;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#cfcfcf 0%, #eaeaea 10%);
+}
+header .position p {
+  margin-right: 30px;
+}
+header .position .icon-position {
+  margin-right: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */

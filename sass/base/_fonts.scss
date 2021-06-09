@@ -7,8 +7,15 @@
 
 /*Text font*/
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(../../public/fonts/Roboto-Thin.ttf) format('truetype');
+$weight-roboto: ('Bold', 'Light', 'Medium', 'Regular', 'Thin');
+@each $value in $weight-roboto {
+    @font-face {
+        font-family: 'Roboto-#{$value}';
+        src: url('../../public/fonts/Roboto-#{$value}.ttf') format('truetype');
+    }
 }
+
+    
+
+
     

@@ -133,12 +133,9 @@ header .position input {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   box-shadow: 5px 5px 10px #c9c9c9;
-}
-.introduction .introduction__btn a {
   color: white;
   font-family: "Roboto-Regular";
-  font-size: 1.1em;
-  text-decoration-line: none;
+  font-size: 1em;
 }
 
 .operation {

@@ -28,12 +28,9 @@
         background: linear-gradient(#FF79DA, #9356DC);
         border: none;
         box-shadow: 5px 5px 10px rgb(201, 201, 201);     
-        a {
         color: white;
         @include get-roboto-font('Regular'); 
-        font-size: 1.1em;
-        text-decoration-line: none;
-        }              
+        font-size: 1em;          
     }
 }
 .operation {

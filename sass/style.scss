@@ -1,5 +1,12 @@
 @import './base/reset';
 @import './base/fonts';
+
 @import './utils/mixins';
+
+@import './components/default-btn';
+@import './components/operation-btn';
+
 @import './layout/header';
 @import './layout/main';
+
+@import './pages/index';

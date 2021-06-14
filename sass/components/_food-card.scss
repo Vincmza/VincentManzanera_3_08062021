@@ -1,3 +1,5 @@
+/*parent box in which food-card sets in*/
+
 .food-section {
     width:375px;
     height:1225px;
@@ -12,6 +14,8 @@
       @include get-roboto-font('Bold');
       font-size:1.7em;
     }
+/*food-card we can re-use*/
+
     .food-card {
       width:90%;
       height:251px;

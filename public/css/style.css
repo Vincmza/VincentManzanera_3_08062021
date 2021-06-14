@@ -146,6 +146,7 @@ td, th {
   color: #7e7e7e;
 }
 
+/*parent box in which food-card sets in*/
 .food-section {
   width: 375px;
   height: 1225px;
@@ -154,6 +155,7 @@ td, th {
   align-items: center;
   justify-content: space-evenly;
   background-color: #f6f6f6;
+  /*food-card we can re-use*/
 }
 .food-section h2 {
   margin-right: auto;

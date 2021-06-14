@@ -215,6 +215,9 @@ td, th {
 }
 .food-section .food-card .heart-icon--pink {
   background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header {

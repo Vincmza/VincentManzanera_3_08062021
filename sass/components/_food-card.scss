@@ -62,9 +62,14 @@
         font-size:1.6em;
         &--pink {
             background:linear-gradient(#FF79DA, #9356DC);
+            font-weight:bold;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-    }
- } }
+      }
+    }  
+}
+
   
 
     

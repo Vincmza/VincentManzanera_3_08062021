@@ -1,0 +1,43 @@
+footer {
+    width:375px;
+    height:197px;
+    //border:1px solid black;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgb(53, 53, 53);
+    color: white;
+    .footer-title {
+      width:90%;
+      margin-top:20px;
+      font-family: 'Shrikhand';
+      font-size:1.2em;
+    }
+    .footer-infos {
+      list-style-type: none;
+      display:flex;
+      flex-direction:column;
+      padding-left:0px;
+      margin-top:15px;
+      width:90%;
+      @include get-roboto-font('Regular');
+      font-size:1em;
+      &__icon {
+          margin-right:10px;
+          font-size: 0.8em;
+      }
+      &__icon--rotate {
+          transform: rotate(-45deg);
+          font-size: 0.6em;
+          margin-right:9px;
+          color:white;
+      }
+      li {
+          margin-bottom:10px;
+      }
+      a {
+        color:white;
+        text-decoration-line: none;
+      }
+    }
+  }

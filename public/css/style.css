@@ -165,9 +165,6 @@ td, th {
 }
 .restaurant-section .restaurant-card {
   width: 90%;
-  height: 251px;
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 5px 5px 15px #c9c9c9;
@@ -179,19 +176,7 @@ td, th {
   height: 174px;
   object-fit: cover;
 }
-.restaurant-section .restaurant-card__name {
-  font-family: "Roboto-Bold";
-  font-size: 1.2em;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-.restaurant-section .restaurant-card__location {
-  font-family: "Roboto-Light";
-  font-size: 1.1em;
-  margin-top: 10px;
-  margin-left: 15px;
-}
-.restaurant-section .restaurant-card .new-green-sign {
+.restaurant-section .restaurant-card .new-boarding-sign {
   width: 23.41%;
   height: 29px;
   background-color: #99e2d0;
@@ -202,27 +187,34 @@ td, th {
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 249px;
-  left: 244px;
+  top: -160px;
+  left: 245px;
   font-family: "Roboto-Medium";
   font-size: 0.8em;
   padding: 10px;
 }
-.restaurant-section .restaurant-card .new-green-sign--no-display {
+.restaurant-section .restaurant-card .new-boarding-sign--no-display {
   display: none;
 }
-.restaurant-section .restaurant-card .heart-icon {
-  position: relative;
-  bottom: 50px;
-  left: 289px;
+.restaurant-section .restaurant-card__caption {
+  width: 100%;
+  height: auto;
+  padding: 0px 20px;
+}
+.restaurant-section .restaurant-card__name {
+  font-family: "Roboto-Bold";
+  font-size: 1.2em;
+}
+.restaurant-section .restaurant-card__location {
+  font-family: "Roboto-Light";
+  font-size: 1.1em;
+}
+.restaurant-section .like-btn {
   font-size: 1.5em;
   color: black;
-}
-.restaurant-section .restaurant-card .heart-icon--pink {
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-weight: bold;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 250px;
+  bottom: 50px;
 }
 
 header {

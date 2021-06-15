@@ -19,9 +19,8 @@
 
     .restaurant-card {
       width:90%;
-      height:251px;
-      display:flex;
-      flex-direction:column;
+      //display:flex;
+      //flex-direction: column;
       border-radius:20px;
       overflow:hidden;
       box-shadow: 5px 5px 15px rgb(201, 201, 201);
@@ -32,19 +31,7 @@
         height:174px;
         object-fit: cover;
       }
-      &__name {
-          @include get-roboto-font('Bold');
-          font-size:1.2em;
-          margin-top:10px;
-          margin-left:15px;
-      }
-      &__location {
-          @include get-roboto-font('Light');
-          font-size:1.1em;
-          margin-top:10px;
-          margin-left:15px;
-      }
-      .new-green-sign {
+      .new-boarding-sign {
         width:23.41%;
         height:29px;
         background-color: rgb(153, 226, 208);
@@ -55,7 +42,7 @@
         justify-content:center;
         align-items:center;
         position: relative;
-        bottom:249px; left:244px;
+        top:-160px; left:245px;
         @include get-roboto-font('Medium');
         font-size:0.8em;
         padding:10px;
@@ -63,20 +50,34 @@
             display:none;
         }
       }
-      .heart-icon {
-        position: relative;
-        bottom:50px; left:289px;
-        font-size:1.5em;
-        color:black;
-        &--pink {
-            background:linear-gradient(#FF79DA, #9356DC);
-            font-weight:bold;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+      &__caption {
+        width:100%;
+        height:auto;
+        padding: 0px 20px;
+      }
+        &__name {
+            @include get-roboto-font('Bold');
+            font-size:1.2em;
+        }
+        &__location {
+            @include get-roboto-font('Light');
+            font-size:1.1em;
         }
       }
-    }  
-}
+      .like-btn {
+        font-size:1.5em;
+        color:black;
+        position: relative;
+        left:250px; bottom:50px;
+        //&--pink {
+            //background:linear-gradient(#FF79DA, #9356DC);
+            //font-weight:bold;
+            //-webkit-background-clip: text;
+            //-webkit-text-fill-color: transparent;
+        }
+      }
+      
+
 
   
 

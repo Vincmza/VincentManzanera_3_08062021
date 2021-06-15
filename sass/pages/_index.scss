@@ -22,3 +22,25 @@
         color: rgb(53, 53, 53); 
     }   
 }
+.operation {
+    width:100%;
+    height:440px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @include get-roboto-font('Bold');
+    h2 {
+        font-size:1.7em;
+        margin-right:auto;
+        padding-left: 20px;
+    }
+    &__list {
+        background-color: rgb(253, 253, 253);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width:100%;
+    }
+}

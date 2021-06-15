@@ -1,0 +1,14 @@
+.like-btn {
+    font-size:1.5em;
+    color:black;
+    position:absolute;
+    right:30px;
+    border:none;
+    background:transparent;
+    &--pink {
+        background:linear-gradient(#FF79DA, #9356DC);
+        font-weight:bold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  }

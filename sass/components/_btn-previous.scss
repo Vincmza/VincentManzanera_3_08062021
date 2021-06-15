@@ -1,0 +1,11 @@
+.btn-previous {
+    position: absolute;
+    left:23px; top:20px;
+    font-size:1.2em;
+    background: transparent;
+    color:rgb(53, 53, 53);
+    &--no-display{
+        display:none;
+    }
+}
+

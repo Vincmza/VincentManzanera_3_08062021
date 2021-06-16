@@ -7,14 +7,15 @@
     }
     &__details {
       width:100%;
+      margin-top:25px;
       &-title {
         width:100%;
         display:flex;
         align-items: center;
         h1 {
             font-family: 'Shrikhand';
-            font-size:1.6em;
-            margin-left:10px;
+            font-size:1.8em;
+            margin-left:20px;
         }
       }
     }

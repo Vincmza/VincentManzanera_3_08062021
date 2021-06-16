@@ -214,12 +214,13 @@ td, th {
   display: flex;
   margin-right: 10px;
   margin-left: 10px;
-  position: relative;
   overflow: hidden;
 }
 .menu__section h2 {
   font-family: "Roboto-Light";
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .menu__section .menu__entree {
   display: flex;
@@ -227,26 +228,30 @@ td, th {
 .menu__section .menu__entree h3 {
   font-family: "Roboto-Bold";
   font-size: 1.2em;
+  margin-bottom: 5px;
 }
 .menu__section .menu__entree p {
   font-family: "Roboto-Light";
+  margin-bottom: 5px;
 }
 .menu__section .menu__entree-infos {
   display: flex;
-  padding: 10px;
+  padding: 15px 10px 10px 10px;
+  position: relative;
+  width: 100%;
 }
 .menu__section .menu__entree-price {
   font-family: "Roboto-Regular";
   display: flex;
   align-items: flex-end;
-  position: absolute;
-  right: 25px;
+  margin-left: 35%;
+  margin-bottom: 5px;
 }
 .menu__section .menu__entree-check {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 17%;
+  width: 60px;
   height: 100%;
   background-color: #99e2d0;
   position: absolute;
@@ -408,6 +413,7 @@ footer .footer-infos a {
 }
 .menu__details {
   width: 100%;
+  margin-top: 25px;
 }
 .menu__details-title {
   width: 100%;
@@ -416,8 +422,8 @@ footer .footer-infos a {
 }
 .menu__details-title h1 {
   font-family: "Shrikhand";
-  font-size: 1.6em;
-  margin-left: 10px;
+  font-size: 1.8em;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

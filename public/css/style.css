@@ -221,33 +221,45 @@ td, th {
   margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 10px;
 }
-.menu__section .menu__entree {
+
+.menu__entree {
   display: flex;
 }
-.menu__section .menu__entree h3 {
+.menu__entree h3 {
   font-family: "Roboto-Bold";
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-.menu__section .menu__entree p {
+.menu__entree p {
   font-family: "Roboto-Light";
   margin-bottom: 5px;
 }
-.menu__section .menu__entree-infos {
+.menu__entree-infos {
   display: flex;
-  padding: 15px 10px 10px 10px;
+  padding: 15px 10px 10px 15px;
   position: relative;
   width: 100%;
+  transition: width 500ms ease-in-out;
 }
-.menu__section .menu__entree-price {
+.menu__entree-infos:hover {
+  width: calc(100% - 60px);
+}
+.menu__entree-infos:hover i {
+  transform: rotate(-360deg);
+}
+.menu__entree-price {
   font-family: "Roboto-Regular";
   display: flex;
   align-items: flex-end;
-  margin-left: 35%;
+  margin-left: auto;
   margin-bottom: 5px;
+  padding-right: 15px;
 }
-.menu__section .menu__entree-check {
+.menu__entree-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,9 +270,11 @@ td, th {
   right: -60px;
   top: 0px;
 }
-.menu__section .menu__entree-check i {
+.menu__entree-check i {
   color: white;
   background: transparent;
+  transform: rotate(0deg);
+  transition: transform 1400ms;
 }
 
 header {
@@ -422,7 +436,7 @@ footer .footer-infos a {
 }
 .menu__details-title h1 {
   font-family: "Shrikhand";
-  font-size: 1.8em;
+  font-size: 1.7em;
   margin-left: 20px;
 }
 

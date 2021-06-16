@@ -8,51 +8,15 @@
         display: flex;
         margin-right:10px;
         margin-left:10px;
-        overflow: hidden; 
+        overflow: hidden;
     }
     h2 {
         @include get-roboto-font('Light');
         margin-left:20px;
         margin-top:30px;
         margin-bottom:20px;
-    }
-    .menu__entree {
-        display: flex;
-        h3 {
-            @include get-roboto-font('Bold');
-            font-size:1.2em;
-            margin-bottom:5px;
-        }
-        p {
-            @include get-roboto-font('Light');
-            margin-bottom:5px;
-        }
-        &-infos {
-            display:flex;
-            padding: 15px 10px 10px 10px;
-            position:relative;
-            width:100%;     
-        }
-        &-price {
-            @include get-roboto-font('Regular');
-            display: flex;
-            align-items: flex-end;
-            margin-left:35%;
-            margin-bottom:5px;
-        }
-        &-check {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width:60px;
-            height:100%;
-            background-color: rgb(153, 226, 208);
-            position:absolute;
-            right:-60px; top:0px;
-            i {
-                color:white;
-                background:transparent;
-            }
-        }
+        border-bottom:3px solid rgb(153, 226, 208);
+        width:40px;
+        padding-bottom:10px;
     }
 }

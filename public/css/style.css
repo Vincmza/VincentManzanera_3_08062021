@@ -203,6 +203,61 @@ td, th {
   -webkit-text-fill-color: transparent;
 }
 
+.menu__section {
+  width: 100%;
+}
+.menu__section li {
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px #c9c9c9;
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.menu__section h2 {
+  font-family: "Roboto-Light";
+  margin-left: 10px;
+}
+.menu__section .menu__entree {
+  display: flex;
+}
+.menu__section .menu__entree h3 {
+  font-family: "Roboto-Bold";
+  font-size: 1.2em;
+}
+.menu__section .menu__entree p {
+  font-family: "Roboto-Light";
+}
+.menu__section .menu__entree-infos {
+  display: flex;
+  padding: 10px;
+}
+.menu__section .menu__entree-price {
+  font-family: "Roboto-Regular";
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  right: 25px;
+}
+.menu__section .menu__entree-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17%;
+  height: 100%;
+  background-color: #99e2d0;
+  position: absolute;
+  right: -60px;
+  top: 0px;
+}
+.menu__section .menu__entree-check i {
+  color: white;
+  background: transparent;
+}
+
 header {
   width: 100%;
   position: relative;
@@ -341,6 +396,28 @@ footer .footer-infos a {
   padding-left: 20px;
   font-family: "Roboto-Bold";
   font-size: 1.7em;
+}
+
+.menu {
+  width: 100%;
+  border: 1px solid red;
+  background-color: #f6f6f6;
+}
+.menu__picture {
+  width: 100%;
+}
+.menu__details {
+  width: 100%;
+}
+.menu__details-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.menu__details-title h1 {
+  font-family: "Shrikhand";
+  font-size: 1.6em;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

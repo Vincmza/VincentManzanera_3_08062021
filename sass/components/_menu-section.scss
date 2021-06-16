@@ -1,0 +1,53 @@
+.menu__section {
+    width:100%;
+    li {
+        border-radius:15px;
+        box-shadow: 5px 5px 15px rgb(201, 201, 201);
+        background-color: rgb(246, 246, 246);
+        width:100%;
+        display: flex;
+        margin-right:10px;
+        margin-left:10px;
+        position:relative;
+        overflow: hidden; 
+    }
+    h2 {
+        @include get-roboto-font('Light');
+        margin-left:10px;
+    }
+    .menu__entree {
+        display: flex;
+        h3 {
+            @include get-roboto-font('Bold');
+            font-size:1.2em;
+        }
+        p {
+            @include get-roboto-font('Light');
+        }
+        &-infos {
+            display:flex;
+            padding: 10px;           
+        }
+        &-price {
+            @include get-roboto-font('Regular');
+            display: flex;
+            align-items: flex-end;
+            position: absolute;
+            right:25px;
+        }
+        &-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:17%;
+            height:100%;
+            background-color: rgb(153, 226, 208);
+            position:absolute;
+            right:-60px; top:0px;
+            i {
+                color:white;
+                background:transparent;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
-.menu__entree {
-    display: flex;
+.menu__card {
+    width:100%;
     h3 {
         @include get-roboto-font('Bold');
         font-size:1.2em;
@@ -8,6 +8,10 @@
     p {
         @include get-roboto-font('Light');
         margin-bottom:5px;
+        font-size:0.9em;
+        //overflow:hidden;
+        //text-overflow: ellipsis;
+        //white-space: nowrap;
     }
     &-infos {
         display:flex;
@@ -23,7 +27,8 @@
         } 
     }
     &-price {
-        @include get-roboto-font('Regular');
+        @include get-roboto-font('Medium');
+        color:rgb(53, 53, 53);
         display: flex;
         align-items: flex-end;
         margin-left:auto;

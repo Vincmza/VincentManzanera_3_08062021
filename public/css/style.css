@@ -93,6 +93,10 @@ td, th {
   font-family: "Roboto-Regular";
   font-size: 1em;
 }
+.btn:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 5px 5px 8px #9e9999;
+}
 
 /*OPERATION-BTN*/
 .operation-btn {
@@ -210,10 +214,11 @@ td, th {
   border-radius: 15px;
   box-shadow: 5px 5px 15px #c9c9c9;
   background-color: #f6f6f6;
-  width: 100%;
+  width: 95%;
   display: flex;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 .menu__section h2 {
@@ -226,40 +231,42 @@ td, th {
   padding-bottom: 10px;
 }
 
-.menu__entree {
-  display: flex;
+.menu__card {
+  width: 100%;
 }
-.menu__entree h3 {
+.menu__card h3 {
   font-family: "Roboto-Bold";
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-.menu__entree p {
+.menu__card p {
   font-family: "Roboto-Light";
   margin-bottom: 5px;
+  font-size: 0.9em;
 }
-.menu__entree-infos {
+.menu__card-infos {
   display: flex;
   padding: 15px 10px 10px 15px;
   position: relative;
   width: 100%;
   transition: width 500ms ease-in-out;
 }
-.menu__entree-infos:hover {
+.menu__card-infos:hover {
   width: calc(100% - 60px);
 }
-.menu__entree-infos:hover i {
+.menu__card-infos:hover i {
   transform: rotate(-360deg);
 }
-.menu__entree-price {
-  font-family: "Roboto-Regular";
+.menu__card-price {
+  font-family: "Roboto-Medium";
+  color: #353535;
   display: flex;
   align-items: flex-end;
   margin-left: auto;
   margin-bottom: 5px;
   padding-right: 15px;
 }
-.menu__entree-check {
+.menu__card-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,7 +277,7 @@ td, th {
   right: -60px;
   top: 0px;
 }
-.menu__entree-check i {
+.menu__card-check i {
   color: white;
   background: transparent;
   transform: rotate(0deg);
@@ -419,8 +426,16 @@ footer .footer-infos a {
 
 .menu {
   width: 100%;
-  border: 1px solid red;
   background-color: #f6f6f6;
+}
+.menu__order {
+  display: flex;
+  justify-content: center;
+  margin-top: 46px;
+  margin-bottom: 58px;
+}
+.menu__order button {
+  padding: 0px 40px 0px 40px;
 }
 .menu__picture {
   width: 100%;

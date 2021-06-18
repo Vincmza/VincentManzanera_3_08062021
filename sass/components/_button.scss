@@ -9,5 +9,9 @@
     box-shadow: 5px 5px 10px rgb(201, 201, 201);     
     color: white;
     @include get-roboto-font('Regular'); 
-    font-size: 1em;          
+    font-size: 1em;
+    &:hover{
+        background:linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
+        box-shadow: 5px 5px 8px rgb(158, 153, 153);
+    }
 }

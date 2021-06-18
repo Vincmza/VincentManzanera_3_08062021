@@ -5,10 +5,22 @@
     right:30px;
     border:none;
     background:transparent;
+    &:hover {
+        .like-btn--pink {
+            transform: translate(-50%, -52%) scale(1);
+        }
+    }    
     &--pink {
         background:linear-gradient(#FF79DA, #9356DC);
         font-weight:bold;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        position:absolute;
+        top:50%; left:50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition:transform 600ms;
     }
-  }
+    &--stroke {
+        position: relative;
+    }
+}

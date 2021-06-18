@@ -200,11 +200,22 @@ td, th {
   border: none;
   background: transparent;
 }
+.like-btn:hover .like-btn--pink {
+  transform: translate(-50%, -52%) scale(1);
+}
 .like-btn--pink {
   background: linear-gradient(#FF79DA, #9356DC);
   font-weight: bold;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 600ms;
+}
+.like-btn--stroke {
+  position: relative;
 }
 
 .menu__section {
@@ -238,11 +249,17 @@ td, th {
   font-family: "Roboto-Bold";
   font-size: 1.2em;
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__card p {
   font-family: "Roboto-Light";
   margin-bottom: 5px;
-  font-size: 0.9em;
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__card-infos {
   display: flex;
@@ -251,13 +268,16 @@ td, th {
   width: 100%;
   transition: width 500ms ease-in-out;
 }
+.menu__card-infos-caption {
+  min-width: 0;
+}
 .menu__card-infos:hover {
   width: calc(100% - 60px);
 }
 .menu__card-infos:hover i {
   transform: rotate(-360deg);
 }
-.menu__card-price {
+.menu__card-infos-price {
   font-family: "Roboto-Medium";
   color: #353535;
   display: flex;
@@ -266,7 +286,7 @@ td, th {
   margin-bottom: 5px;
   padding-right: 15px;
 }
-.menu__card-check {
+.menu__card-infos-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,11 +297,11 @@ td, th {
   right: -60px;
   top: 0px;
 }
-.menu__card-check i {
+.menu__card-infos-check i {
   color: white;
   background: transparent;
   transform: rotate(0deg);
-  transition: transform 1400ms;
+  transition: transform 1000ms;
 }
 
 header {

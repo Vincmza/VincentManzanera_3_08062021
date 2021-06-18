@@ -3,13 +3,13 @@
 
 @import './utils/mixins';
 
-@import './components/btn-previous';
-@import './components/button';
-@import './components/operation-btn';
+@import './components/button/btn-previous';
+@import './components/button/button';
+@import './components/button/operation-btn';
 @import './components/restaurant-card';
-@import './components/like-btn';
-@import './components/menu-section';
-@import './components/menu-card';
+@import './components/button/like-btn';
+@import './components/menu/menu-section';
+@import './components/menu/menu-card';
 
 @import './layout/header';
 @import './layout/main';

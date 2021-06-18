@@ -1,0 +1,60 @@
+.menu__card {
+    width:100%;
+    h3 {
+        @include get-roboto-font('Bold');
+        font-size:1.2em;
+        margin-bottom:5px;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    p {
+        @include get-roboto-font('Light');
+        margin-bottom:5px;
+        font-size:1em;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    &-infos {
+        display:flex;
+        padding: 15px 10px 10px 15px;
+        position:relative;
+        width:100%;
+        transition:width 500ms ease-in-out;
+        &-caption{
+            min-width:0;
+        }
+        &:hover {
+            width:calc(100% - 60px);
+            i {
+                transform:rotate(-360deg);
+            }               
+        } 
+        &-price {
+            @include get-roboto-font('Medium');
+            color:rgb(53, 53, 53);
+            display: flex;
+            align-items: flex-end;
+            margin-left:auto;
+            margin-bottom:5px;
+            padding-right:15px;
+        }
+        &-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:60px;
+            height:100%;
+            background-color: rgb(153, 226, 208);
+            position:absolute;
+            right:-60px; top:0px;
+            i {
+                color:white;
+                background:transparent;
+                transform:rotate(0deg);
+                transition:transform 1000ms;
+            }
+        }
+    }
+}

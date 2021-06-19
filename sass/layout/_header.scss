@@ -7,6 +7,14 @@ header {
         display: flex;
         justify-content: center;
         padding: 8px 0px 0px 0px;
+        p {
+            @include set-media-querrie(tablette){
+                font-size:1.4em;
+            }
+            @include set-media-querrie(laptop){
+                font-size: 2em;
+            }
+        }
             
     }
 }

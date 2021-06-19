@@ -1,3 +1,11 @@
 @mixin get-roboto-font ($font-weight) {
     font-family: 'Roboto-#{$font-weight}';
 }
+
+/*Mixin media querrie*/
+
+@mixin set-media-querrie($breakpoint){
+    @media screen and (min-width: map-get($map: $list-breakpoint, $key: $breakpoint)){
+        @content
+    }
+}

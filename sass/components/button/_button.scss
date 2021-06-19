@@ -1,8 +1,8 @@
 /*BUTTON TO EXPLORE RESTAURANTS IN HOME PAGE*/
 
 .btn {
-    height:50px;
-    padding: 0px 20px;
+    height:auto;
+    padding:20px;
     border-radius: 200px;
     background: linear-gradient(#FF79DA, #9356DC);
     border: none;
@@ -10,6 +10,13 @@
     color: white;
     @include get-roboto-font('Regular'); 
     font-size: 1em;
+    @include set-media-querrie(tablette){
+        font-size:1.3em;
+    }
+    @include set-media-querrie(laptop){
+        font-size:1.5em;
+        margin-top:20px;
+    }
     &:hover{
         background:linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
         box-shadow: 5px 5px 8px rgb(158, 153, 153);

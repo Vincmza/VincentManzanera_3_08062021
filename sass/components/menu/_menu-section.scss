@@ -1,23 +1,37 @@
 .menu__section {
-    width:100%;
-    li {
-        border-radius:15px;
-        box-shadow: 5px 5px 15px rgb(201, 201, 201);
-        background-color: rgb(246, 246, 246);
-        width:95%;
+    @include set-media-querrie(laptop){
         display: flex;
-        margin-right:10px;
-        margin-left:10px;
-        margin-bottom:15px;
-        overflow: hidden;
+        justify-content: space-evenly;
     }
-    h2 {
-        @include get-roboto-font('Light');
-        margin-left:20px;
-        margin-top:30px;
-        margin-bottom:20px;
-        border-bottom:3px solid rgb(153, 226, 208);
-        width:40px;
-        padding-bottom:10px;
+    &-card {
+        width:100%;
+        @include set-media-querrie(mobile){
+            width:80%;
+            margin: auto;
+        }
+        @include set-media-querrie(laptop){
+            width:30%;
+            margin:0;
+        }
+        li {
+            border-radius:15px;
+            box-shadow: 5px 5px 15px rgb(201, 201, 201);
+            background-color: rgb(246, 246, 246);
+            width:95%;
+            display: flex;
+            margin-right:10px;
+            margin-left:10px;
+            margin-bottom:15px;
+            overflow: hidden;
+        }
+        h2 {
+            @include get-roboto-font('Light');
+            margin-left:20px;
+            margin-top:30px;
+            margin-bottom:20px;
+            border-bottom:3px solid rgb(153, 226, 208);
+            width:40px;
+            padding-bottom:10px;
+        }
     }
 }

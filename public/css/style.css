@@ -82,6 +82,18 @@ td, th {
 .btn-previous--no-display {
   display: none;
 }
+@media screen and (min-width: 767px) {
+  .btn-previous {
+    left: 5%;
+    top: 35%;
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .btn-previous {
+    font-size: 1.5em;
+  }
+}
 
 /*BUTTON TO EXPLORE RESTAURANTS IN HOME PAGE*/
 .btn {
@@ -138,6 +150,11 @@ td, th {
     margin-bottom: 50px;
   }
 }
+@media screen and (min-width: 1023px) {
+  .operation-btn {
+    height: 90px;
+  }
+}
 .operation-btn:hover {
   background-color: #f5edff;
 }
@@ -186,12 +203,19 @@ td, th {
 @media screen and (min-width: 1023px) {
   .restaurant-card {
     width: 40%;
+    height: 40%;
+    margin-bottom: 50px;
   }
 }
 .restaurant-card img {
   width: 100%;
   height: 174px;
   object-fit: cover;
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-card img {
+    height: 75%;
+  }
 }
 .restaurant-card__boarding-sign {
   width: 23.41%;
@@ -212,7 +236,7 @@ td, th {
 }
 @media screen and (min-width: 1023px) {
   .restaurant-card__boarding-sign {
-    width: 18%;
+    width: 15%;
   }
 }
 .restaurant-card__boarding-sign--no-display {
@@ -228,6 +252,11 @@ td, th {
 @media screen and (min-width: 767px) {
   .restaurant-card__caption {
     font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-card__caption {
+    padding: 20px 20px 0px 20px;
   }
 }
 .restaurant-card__name {
@@ -251,8 +280,34 @@ td, th {
   border: none;
   background: transparent;
 }
+@media screen and (min-width: 550px) {
+  .like-btn--responsive {
+    right: 30%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .like-btn--responsive {
+    right: 45%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .like-btn--responsive {
+    right: 60%;
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .like-btn--responsive {
+    right: 65%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .like-btn--responsive {
+    right: 70%;
+  }
+}
 .like-btn:hover .like-btn--pink {
-  transform: translate(-50%, -52%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 .like-btn--pink {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -269,10 +324,28 @@ td, th {
   position: relative;
 }
 
-.menu__section {
+@media screen and (min-width: 1023px) {
+  .menu__section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.menu__section-card {
   width: 100%;
 }
-.menu__section li {
+@media screen and (min-width: 550px) {
+  .menu__section-card {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .menu__section-card {
+    width: 30%;
+    margin: 0;
+  }
+}
+.menu__section-card li {
   border-radius: 15px;
   box-shadow: 5px 5px 15px #c9c9c9;
   background-color: #f6f6f6;
@@ -283,7 +356,7 @@ td, th {
   margin-bottom: 15px;
   overflow: hidden;
 }
-.menu__section h2 {
+.menu__section-card h2 {
   font-family: "Roboto-Light";
   margin-left: 20px;
   margin-top: 30px;
@@ -576,6 +649,7 @@ footer .footer-infos a {
 
 .restaurant {
   width: 100%;
+  background-color: #f6f6f6;
 }
 .restaurant h2 {
   margin-right: auto;
@@ -597,13 +671,18 @@ footer .footer-infos a {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #f6f6f6;
 }
 @media screen and (min-width: 767px) {
   .restaurant-section {
     flex-wrap: wrap;
     flex-direction: row;
     height: 650px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .restaurant-section {
+    height: 950px;
+    margin-top: 50px;
   }
 }
 
@@ -614,28 +693,53 @@ footer .footer-infos a {
 .menu__order {
   display: flex;
   justify-content: center;
-  margin-top: 46px;
-  margin-bottom: 58px;
+  padding-bottom: 50px;
 }
 .menu__order button {
-  padding: 0px 40px 0px 40px;
+  padding: 20px 40px;
 }
 .menu__picture {
   width: 100%;
 }
 .menu__details {
   width: 100%;
-  margin-top: 25px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #f6f6f6;
+  position: relative;
+  top: -40px;
 }
 .menu__details-title {
   width: 100%;
   display: flex;
   align-items: center;
+  padding-top: 30px;
 }
 .menu__details-title h1 {
   font-family: "Shrikhand";
   font-size: 1.7em;
   margin-left: 20px;
+}
+@media screen and (min-width: 550px) {
+  .menu__details-title h1 {
+    margin-left: 0;
+    padding-left: 12%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .menu__details-title h1 {
+    padding-left: 5%;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .menu__details-title h1 {
+    padding-left: 4%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .menu__details-title h1 {
+    font-size: 2.2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

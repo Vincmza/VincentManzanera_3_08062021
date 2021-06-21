@@ -5,9 +5,27 @@
     right:30px;
     border:none;
     background:transparent;
+    &--responsive {
+        @include set-media-querrie(mobile){
+            right:30%;
+        }
+        @include set-media-querrie(tablette){
+            right:45%;
+        }
+        @include set-media-querrie(laptop){
+            right:60%;
+            font-size:1.8em;
+        }
+        @include set-media-querrie(laptopxl){
+            right:65%;
+        }
+        @include set-media-querrie(desktop){
+            right:70%;
+        }
+    }    
     &:hover {
         .like-btn--pink {
-            transform: translate(-50%, -52%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
         }
     }    
     &--pink {

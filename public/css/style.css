@@ -129,8 +129,15 @@ td, th {
 @keyframes container {
   from {
     opacity: 1;
+    z-index: 0;
+    background: linear-gradient(#9356DC, #99E2D0);
   }
-  to {
+  99% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    z-index: -1;
     opacity: 0;
   }
 }
@@ -615,7 +622,7 @@ footer .footer-infos a {
   position: absolute;
   justify-content: center;
   align-items: center;
-  animation: container 3000ms;
+  animation: container 4000ms forwards;
 }
 .container__loading-spinner {
   width: 250px;
@@ -625,7 +632,7 @@ footer .footer-infos a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loading-spinner 1500ms infinite ease-in-out backwards;
+  animation: loading-spinner 1500ms infinite ease-in-out;
 }
 .container__loading-spinner-dot {
   width: 10px;
@@ -635,12 +642,12 @@ footer .footer-infos a {
   align-items: center;
   background-color: #FF79DA;
   border-radius: 10px;
-  animation: dot-spinner 1500ms infinite ease-in-out backwards;
+  animation: dot-spinner 1500ms infinite ease-in-out;
 }
 .container__loading-spinner-dot span {
   font-family: "Shrikhand";
   font-size: 1em;
-  animation: ohmyfood-text 1500ms infinite ease-in-out backwards;
+  animation: ohmyfood-text 1500ms infinite ease-in-out;
 }
 
 .position {

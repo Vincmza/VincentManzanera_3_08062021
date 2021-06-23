@@ -6,7 +6,7 @@
     position:absolute;
     justify-content:center;
     align-items: center;
-    animation: container 3000ms;
+    animation: container 4000ms forwards;
     &__loading-spinner {
       width:250px;
       height:250px;
@@ -15,7 +15,7 @@
       display:flex;
       justify-content:center;
       align-items: center;
-      animation: loading-spinner 1500ms infinite ease-in-out backwards;
+      animation: loading-spinner 1500ms infinite ease-in-out;
       &-dot {
         width:10px;
         height:10px;
@@ -24,11 +24,11 @@
         align-items: center;
         background-color: #FF79DA;
         border-radius:10px;
-        animation: dot-spinner 1500ms infinite ease-in-out backwards;
+        animation: dot-spinner 1500ms infinite ease-in-out;
         span {
             font-family: 'Shrikhand';
             font-size: 1em;
-            animation: ohmyfood-text 1500ms infinite ease-in-out backwards;
+            animation: ohmyfood-text 1500ms infinite ease-in-out;
         }
       }
     }

@@ -71,6 +71,95 @@ td, th {
 }
 /* Breakpoints*/
 /*Mixin media querrie*/
+/*MENU-CARD ANIMATION*/
+@keyframes menu-card-display {
+  from {
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.menu__card-anim-1 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 150ms;
+}
+
+.menu__card-anim-2 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 300ms;
+}
+
+.menu__card-anim-3 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 450ms;
+}
+
+.menu__card-anim-4 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 600ms;
+}
+
+.menu__card-anim-5 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 750ms;
+}
+
+.menu__card-anim-6 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 900ms;
+}
+
+.menu__card-anim-7 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 1050ms;
+}
+
+.menu__card-anim-8 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 1200ms;
+}
+
+.menu__card-anim-9 {
+  animation: menu-card-display 850ms cubic-bezier(0.12, 0.25, 0.36, 0.93) backwards;
+  animation-delay: 1350ms;
+}
+
+/*INDEX PAGE ANIMATION*/
+@keyframes container {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes loading-spinner {
+  from {
+    transform: scale(2);
+  }
+  85%, 100% {
+    transform: scale(1);
+    background-color: #99E2D0;
+  }
+}
+@keyframes dot-spinner {
+  from {
+    transform: scale(1);
+  }
+  85%, 100% {
+    transform: scale(25);
+    background-color: #99E2D0;
+  }
+}
+@keyframes ohmyfood-text {
+  from {
+    transform: scale(0);
+  }
+  85%, 100% {
+    transform: scale(0.1);
+  }
+}
 .btn-previous {
   position: absolute;
   left: 23px;
@@ -517,6 +606,41 @@ footer .footer-infos li {
 footer .footer-infos a {
   color: white;
   text-decoration-line: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  animation: container 3000ms;
+}
+.container__loading-spinner {
+  width: 250px;
+  height: 250px;
+  border: 5px solid #9356DC;
+  border-radius: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loading-spinner 1500ms infinite ease-in-out backwards;
+}
+.container__loading-spinner-dot {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF79DA;
+  border-radius: 10px;
+  animation: dot-spinner 1500ms infinite ease-in-out backwards;
+}
+.container__loading-spinner-dot span {
+  font-family: "Shrikhand";
+  font-size: 1em;
+  animation: ohmyfood-text 1500ms infinite ease-in-out backwards;
 }
 
 .position {

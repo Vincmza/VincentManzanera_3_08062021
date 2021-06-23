@@ -1,0 +1,54 @@
+/*MENU-CARD ANIMATION*/
+
+@keyframes menu-card-display {
+    from {
+        transform: translateY(40%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@for $i from 1 through 9 {
+    .menu__card-anim-#{$i} {
+        animation: menu-card-display 850ms cubic-bezier(.12,.25,.36,.93) backwards;
+        animation-delay: $i * 150ms;
+    }  
+}
+
+/*INDEX PAGE ANIMATION*/
+
+@keyframes container {
+    from {
+        opacity:1;  
+    }
+    to {
+        opacity:0;
+        
+    }
+}
+@keyframes loading-spinner {
+    from {
+        transform:scale(2);
+    }
+    85%, 100% {
+        transform: scale(1);
+        background-color: #99E2D0;
+    }
+}
+@keyframes dot-spinner {
+    from {
+        transform:scale(1);
+    }
+    85%, 100% {
+        transform:scale(25);
+        background-color:#99E2D0;
+    }
+}
+@keyframes ohmyfood-text {
+    from {
+        transform:scale(0);
+    }
+    85%, 100% {
+        transform:scale(0.1);
+    }
+}

@@ -1,6 +1,10 @@
 header {
     width:100%;
     position:relative;
+    @include set-media-querrie(desktop){
+        width:75%;
+        margin: auto;
+    }
     .logo {
         font-family: 'Shrikhand';
         font-size: 2em;

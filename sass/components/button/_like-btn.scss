@@ -7,20 +7,11 @@
     background:transparent;
     &--responsive {
         @include set-media-querrie(mobile){
-            right:30%;
-        }
-        @include set-media-querrie(tablette){
-            right:45%;
+            right:14%;
         }
         @include set-media-querrie(laptop){
-            right:60%;
+            right:4%;
             font-size:1.8em;
-        }
-        @include set-media-querrie(laptopxl){
-            right:65%;
-        }
-        @include set-media-querrie(desktop){
-            right:70%;
         }
     }    
     &:hover {

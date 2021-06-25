@@ -455,6 +455,10 @@ td, th {
 .menu__card {
   width: 100%;
 }
+.menu__card > li {
+  background-color: white;
+  cursor: pointer;
+}
 .menu__card h3 {
   font-family: "Roboto-Bold";
   font-size: 1.2em;
@@ -573,7 +577,6 @@ footer {
 @media screen and (min-width: 1023px) {
   footer {
     font-size: 1.2em;
-    margin-top: 50px;
   }
 }
 footer .footer-title {
@@ -839,6 +842,11 @@ footer .footer-infos a {
   padding: 20px 40px;
 }
 .menu__picture {
+  width: 100%;
+}
+.menu__picture img {
+  object-fit: cover;
+  height: 400px;
   width: 100%;
 }
 .menu__details {

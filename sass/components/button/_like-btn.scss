@@ -5,6 +5,7 @@
     right:30px;
     border:none;
     background:transparent;
+    transform: scale(1);
     &--responsive {
         @include set-media-querrie(mobile){
             right:14%;
@@ -13,7 +14,7 @@
             right:4%;
             font-size:1.8em;
         }
-    }    
+    } 
     &:hover {
         .like-btn--pink {
             transform: translate(-50%, -50%) scale(1);
@@ -31,5 +32,9 @@
     }
     &--stroke {
         position: relative;
+        transition:600ms;
+        &:hover {
+            transform:scale(0);
+        }
     }
 }

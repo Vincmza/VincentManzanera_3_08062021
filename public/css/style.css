@@ -380,6 +380,7 @@ td, th {
   right: 30px;
   border: none;
   background: transparent;
+  transform: scale(1);
 }
 @media screen and (min-width: 550px) {
   .like-btn--responsive {
@@ -408,6 +409,10 @@ td, th {
 }
 .like-btn--stroke {
   position: relative;
+  transition: 600ms;
+}
+.like-btn--stroke:hover {
+  transform: scale(0);
 }
 
 @media screen and (min-width: 1023px) {

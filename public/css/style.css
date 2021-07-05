@@ -849,6 +849,11 @@ footer .footer-infos a {
 .menu__picture {
   width: 100%;
 }
+.menu__picture img {
+  object-fit: cover;
+  height: 219px;
+  width: 100%;
+}
 @media screen and (min-width: 1023px) {
   .menu__picture img {
     object-fit: cover;
